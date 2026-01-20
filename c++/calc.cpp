@@ -3,7 +3,7 @@
 #include <iostream>
 #include <string>
 #include <stdlib.h>
-
+#include <cmath> //future update ;)
 //la fonction calculatrice
 void calculatrice() {
 
