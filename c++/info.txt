@@ -1,1 +1,17 @@
+calc .cpp
+calculatrice et ca logique
+calc.hpp
+la def de calculatrice
+home.cpp
+menu principal
+main.hpp
+inclus a class de home
+main.cpp
+init
+credit.cpp
+les credit
+credit.hpp
+la def des credits
 
+
+j'aime avoir pleins de fichiers 

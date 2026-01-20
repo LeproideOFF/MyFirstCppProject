@@ -1,4 +1,5 @@
 #include "main.hpp"
+#include "calc.hpp"
 #include <iostream>
 #include <string>
 #include <stdlib.h>
@@ -22,7 +23,7 @@ void calculatrice() {
             std::cout << "=                                     ==" << std::endl;
             std::cout << "= [+] Addition      [-] Soustraction  ==" << std::endl;
             std::cout << "= [*] Multiplication [/] Division     ==" << std::endl;
-            std::cout << "= [c] credits                         ==" << std::endl;
+            std::cout << "= [M] menu                            ==" << std::endl;
             std::cout << "=                                     ==" << std::endl;
             std::cout << "========================================" << std::endl;
             
@@ -70,23 +71,11 @@ void calculatrice() {
                 std::cin >> nbr2;
                 std::cout << "mhhh je crois que ca fait " << nbr1  / nbr2 << std::endl;
             }
-            else if (equation == "c"){
-                system("clear");
-                std::cout << "========================================" << std::endl;
-                std::cout << "====             Credits            ====" << std::endl;
-                std::cout << "========================================" << std::endl;
-                std::cout << "======== j'ai pas encore de nom ========" << std::endl;
-                std::cout << "=                                     ==" << std::endl;
-                std::cout << "=     Leproide : C++                  ==" << std::endl;
-                std::cout << "=     sans chatgpt (pour une fois)    ==" << std::endl;
-                std::cout << "=                                     ==" << std::endl;
-                std::cout << "=     [L] quitter                     ==" << std::endl;
-                std::cout << "========================================" << std::endl;
-                std::cin >> equation;
-                
-                
-                
+            else if (equation == "m" or "M"){
+                home();
+            
             }
+                
             //si il c'est tromper quelque part
             else std::cout << "attend attend attend ta fait une erreur la non ?" << std::endl;
             

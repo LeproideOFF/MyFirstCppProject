@@ -1,4 +1,6 @@
 #include "main.hpp"
+#include "credit.hpp"
+#include "calc.hpp"
 #include <iostream>
 #include <string>
 #include <stdlib.h>
@@ -15,7 +17,7 @@ void home(){
     std::cout << "=                                      ==" << std::endl;
     std::cout << "= [c] Calculatrice                     ==" << std::endl;
     std::cout << "=                                      ==" << std::endl;
-    std::cout << "=                                      ==" << std::endl;
+    std::cout << "= [+] Credit                           ==" << std::endl;
     std::cout << "=                                      ==" << std::endl;
     std::cout << "=========================================" << std::endl;
     
@@ -23,5 +25,8 @@ void home(){
     
     if (choix == "c"){
         calculatrice();
+    }
+    else if (choix == "+"){
+        credit();
     }
 }
