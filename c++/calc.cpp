@@ -1,9 +1,10 @@
 #include "main.hpp"
 #include "calc.hpp"
+#include "unnumero.hpp"
 #include <iostream>
 #include <string>
 #include <stdlib.h>
-#include <cmath> //future update ;)
+#include <cmath> 
 //la fonction calculatrice
 void calculatrice() {
 
@@ -23,7 +24,7 @@ void calculatrice() {
             std::cout << "=                                     ==" << std::endl;
             std::cout << "= [+] Addition      [-] Soustraction  ==" << std::endl;
             std::cout << "= [*] Multiplication [/] Division     ==" << std::endl;
-            std::cout << "= [M] menu                            ==" << std::endl;
+            std::cout << "= [M] menu           [A] autre        ==" << std::endl;
             std::cout << "=                                     ==" << std::endl;
             std::cout << "========================================" << std::endl;
             
@@ -71,11 +72,14 @@ void calculatrice() {
                 std::cin >> nbr2;
                 std::cout << "mhhh je crois que ca fait " << nbr1  / nbr2 << std::endl;
             }
-            else if (equation == "m" or "M"){
+            else if (equation == "a" ){
+                unnumero();
+            }
+            else if (equation == "m" ){
                 home();
             
             }
-                
+            
             //si il c'est tromper quelque part
             else std::cout << "attend attend attend ta fait une erreur la non ?" << std::endl;
             
